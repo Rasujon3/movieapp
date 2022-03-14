@@ -4,48 +4,33 @@ body {
 }
 
 .movie-app > .row {
-  overflow-x: auto;
-  flex-wrap: nowrap;
+  overflow-x: auto !important ;
+  flex-wrap: nowrap !important;
 }
 
 .image-container {
-  position: relative;
-  transition: transform 0.2s;
+  position: relative !important;
+  transition: transform 0.2s !important;
+  width: fit-content !important;
 }
 
 .image-container:hover {
-  cursor: pointer;
-  transform: scale(1.1);
+  cursor: pointer !important;
+  transform: scale(1.1) !important;
 }
 
 .image-container:hover .overlay {
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 .overlay {
-  position: absolute;
-  background: rgba(0, 0, 0, 0.8);
-  width: 100%;
-  transition: 0.5s ease;
-  opacity: 0;
-  bottom: 0;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
-}
-
-.image-container:hover .overlay {
-  opacity: 1;
-}
-
-.overlay {
-  position: absolute;
-  background: rgba(0, 0, 0, 0.8);
-  width: 100%;
-  transition: 0.5s ease;
-  opacity: 0;
-  bottom: 0;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
+  position: absolute !important;
+  background: rgba(0, 0, 0, 0.8) !important;
+  width: 100% !important;
+  transition: 0.5s ease !important;
+  opacity: 0 !important;
+  bottom: 0 !important;
+  font-size: 20px !important;
+  padding: 20px !important;
+  text-align: center !important;
 }
